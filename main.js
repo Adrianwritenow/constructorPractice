@@ -31,11 +31,11 @@ let atticus = new Dog()
 // Human Constructor & Prototype
 function Human (cool) {
   this.cool = cool;
-  this.pet = function(){
-    sadie.status = 'happy';
+  this.pet = function(dog){
+    dog.status = 'happy';
   }
-  this.feed =function(){
-    moonshine.hungry = false;
+  this.feed = function(dog){
+    dog.hungry = false;
   }
 }
  let mason = new Human(false);
