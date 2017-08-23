@@ -31,16 +31,19 @@ let atticus = new Dog()
 // Human Constructor & Prototype
 function Human (cool) {
   this.cool = cool;
-  this.pet = function(dog){
-    dog.status = 'happy';
-  }
-  this.feed = function(dog){
-    dog.hungry = false;
-  }
+
 }
+
  let mason = new Human(false);
  let julia = new Human(true);
 
+ Human.prototype.pet = function(dog){
+   return dog.status ='happy';
+ }
+
+ Human.prototype.feed = function(dog){
+   return dog.hungry =false;
+ }
 
 // Instances of Human
 // Needed: mason, julia
